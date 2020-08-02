@@ -509,4 +509,8 @@ header{
         padding-left:0px;
         padding-top:50px;
     }
+
+    .overlay img{
+        padding-left: 0;
+    }
 }
