@@ -220,6 +220,25 @@ header{
     filter: contrast(100%);
 
 }
+
+#myProgress {
+    width: 100%;
+    background-color: white;
+    border-radius: 50px;
+}
+  
+#slider-progress {
+    border-radius: 50px;
+    width: 1%;
+    height: 15px;
+    background-color: rgb(42, 42, 42);
+    transition: 0.3s ease-in-out;
+}
+
+.collection-progress{
+    padding-left:35%;
+}
+  
 .carousel-frame{
     overflow: hidden;
     overflow-x: scroll;
@@ -395,7 +414,7 @@ header{
 }
 
 .overlay{
-    opacity: 0;
+    opacity: 1;
     background: #eaeaea;
     width: 100%;
     height: 100vh;
@@ -411,7 +430,6 @@ header{
 }
 
 .overlay img{
-    padding-left:35%;
     filter: brightness(1.2);
 }
 
@@ -485,7 +503,10 @@ header{
     .solo-content{
         padding-left:0;
         display: block;
+        overflow-y: scroll;
     }
+
+
 
 
     .solo-image-container{
@@ -511,11 +532,15 @@ header{
 
     .collection-items{
         grid-template-columns: 100%;
-        padding-left:0px;
+        padding-left: 15px;
         padding-top:50px;
     }
 
     .overlay img{
+        padding-left: 0;
+    }
+
+    .collection-progress{
         padding-left: 0;
     }
 }
