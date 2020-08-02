@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matt Cromwell - Photography</title>
+</head>
+<body>
+    <section class = "home-page">
+        <div class ="main-info">
+            <img src="static/img/icons/x.svg" alt="" class="mobile-menu-close">
+            <div style="display: flex;">
+                <h1 class="name-home"><a href="index.html">Matt Cromwell</a></h1>
+            </div>
+            <p class="about">I am a 3D Generalist & Notch designer at Two Trucks Productions ltd. Click on a collection below to check it out.</p>
+                <ul class="projects">
+                    <li class="home-project-title" onclick="CollectionSelection(this);">Trees.</li>
+                    <li class="home-project-title" onclick="CollectionSelection(this);">Seascapes.</li>
+                    <li class="home-project-title" onclick="CollectionSelection(this);">Architecture.</li>
+                    <li class="home-project-title" onclick="CollectionSelection(this);">Florence.</li>
+                    <li class="home-project-title" onclick="CollectionSelection(this);">Vegas.</li>
+                </ul>
+            <div class="social-ico-container">
+                <a href="https://www.instagram.com/mattcrom15/"><img src="static/img/icons/instagram.svg" alt="" width="26px" height="26px" class="socials-ico"></a>
+                <a href="mailto: mattcromwell@gmail.com"><img src="static/img/icons/send.svg" alt="" width="26px" height="26px" class="socials-ico"></a>
+            </div>
+        </div>
+        <img src="static/img/icons/menu.svg"alt="" class="mobile-hamburger">
+        <div>
+            <div class="collection-items"></div>
+            <div class="overlay">
+                <div class="collection-progress">
+                    <img src="static/img/white-camera-spin-front.gif" alt="">
+                <div id="myProgress">
+                    <div id="slider-progress"></div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="images/black and white/tree3.jpg" class="tree">
+        </div>
+        <div class="solo-image-box" status="closed">
+            <img src="static/img/icons/x.svg" alt="" class="close-ico" width="46px" height="46px">
+            <div class="solo-content">
+                <div class="solo-image-container"></div>
+                <div class="solo-text">
+                    <h1 id="image-title"></h1>
+                    <div class="Prints-info">
+                        <h2>Prints</h2>
+                        <p></p>
+                        <ul>
+                            <li>A3(297mm X 420mm) - £25</li>
+                            <li>A2(420mm X 594mm) - £50</li>
+                        </ul>
+                    </div>
+                    <p style="font-style: italic;">if you wish to purchase a print of this photograph, please email me with the name and size.</p>
+                    <a href="mailto: mattcromwell@gmail.com"><button class="btn-buy">Contact</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="gif-loader">
+        <img src="static/img/white-camera-spin-front.gif" alt="">
+    </div>
+    <script src="static/js/script.js"></script>
+</body>
+</html>
