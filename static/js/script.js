@@ -139,11 +139,6 @@ const vegasImages = {
 
 var mobileTotalWidth = 500;
 
-//collections grid
-
-const collectionItems = document.querySelector('.collection-items');
-
-
 
 
 // open solo image
@@ -210,6 +205,13 @@ function MobileMenu(){
     
 
 }
+
+
+//collections grid
+
+const collectionItems = document.querySelector('.collection-items');
+
+
 
 //load Collection
 
@@ -282,26 +284,44 @@ function CollectionSelection(elem){
 
         }
 
+        ImgsLoaded = 0;
         //load images
-        for (const [key, value] of Object.entries(ImageArray)) {
-            const Path = ImageFolder + ImageArray[key]['path'];
-            const ImgHTML = document.createElement('img');
-            ImgHTML.setAttribute('class','collection-item');
-            ImgHTML.setAttribute('src',Path);
-            ImgHTML.setAttribute('onclick','ImageSelection(this);');
-            ImgHTML.setAttribute('name',ImageArray[key]['name']);
-            collectionItems.appendChild(ImgHTML);
-        }
-    
+            for (const [key, value] of Object.entries(ImageArray)) {
+                const Path = ImageFolder + ImageArray[key]['path'];
+                const ImgHTML = document.createElement('img');
+                ImgHTML.setAttribute('class','collection-item');
+                ImgHTML.setAttribute('src',Path);
+                ImgHTML.setAttribute('onclick','ImageSelection(this);');
+                ImgHTML.setAttribute('name',ImageArray[key]['name']);
+                collectionItems.appendChild(ImgHTML);
+                ImgHTML.addEventListener('load',function(){
+                    ImgsLoaded ++;
+
+                });
+            }
+
+        while (ImgsLoaded < Object.keys(ImageArray).length) {
+            document.querySelector('.overlay').style.opacity = 1;
+            document.querySelector('.overlay').style.pointerEvents = 'auto';
+
+        }; 
+        console.log(ImgsLoaded);
+        document.querySelector('.overlay').style.opacity = 0;
+        document.querySelector('.overlay').style.pointerEvents = 'none';
+        //get total length of array
+        //add number each time to variable
+        //when the number is equal run that function
         collectionItems.style.opacity = 1;
 
     },750);
-    setTimeout(function(){
-        document.querySelector('.overlay').style.opacity = 0;
-        document.querySelector('.overlay').style.pointerEvents = 'none';
+    // setTimeout(function(){
+    //     document.querySelector('.overlay').style.opacity = 0;
+    //     document.querySelector('.overlay').style.pointerEvents = 'none';
 
 
-    },750);
+    // },750);
+
+
 
 
 
@@ -332,4 +352,11 @@ document.querySelector('.mobile-menu-close').addEventListener('click',function()
     document.querySelector('.mobile-menu-close').style.pointerEvents = 'none';
     document.querySelector('.mobile-menu-close').style.opacity = 0;
 
+});
+
+
+window.addEventListener('load',function(){
+    document.querySelector('.gif-loader').style.opacity = 0;
+    document.querySelector('.gif-loader').style.pointerEvents = 'none';
+    console.log('page-loaded');
 });
