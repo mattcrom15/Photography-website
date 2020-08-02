@@ -412,7 +412,10 @@ header{
 
 .overlay img{
     padding-left:35%;
+    filter: brightness(1.2);
 }
+
+/* tablet styles */
 
 @media(max-width:1150px){
     .home-project-title, .home-project-title-active{
@@ -427,6 +430,8 @@ header{
         font-size: 14px;
     }
 }
+
+/* mobile styles */
 
 @media(max-width:500px){
 
