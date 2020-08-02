@@ -207,15 +207,28 @@ function MobileMenu(){
 }
 
 
-//collections grid
+
+
+// checks for loaded images
+var ImgsLoaded = 0;
+function ImageLoaded(array){
+    ImgsLoaded ++;
+    if(ImgsLoaded == Object.keys(array).length) {
+        document.querySelector('.overlay').style.opacity = 0;
+        document.querySelector('.overlay').style.pointerEvents = 'none';
+        console.log("Loading finished");
+    }
+
+}
+
+// collections grid
 
 const collectionItems = document.querySelector('.collection-items');
-
-
 
 //load Collection
 
 function CollectionSelection(elem){
+    ImgsLoaded = 0;
 
     //check for hero-image
     var treeHero = document.querySelector('.hero-image');
@@ -257,7 +270,7 @@ function CollectionSelection(elem){
 
     document.querySelector('.overlay').style.opacity = 1;
     setTimeout(function(){
-        collectionItems.style.opacity = 0;
+        collectionItems.style.opacity = 1;
         collectionItems.innerHTML = ''
         var ImageArray = ''
         var ImageFolder = ''
@@ -284,34 +297,22 @@ function CollectionSelection(elem){
 
         }
 
-        ImgsLoaded = 0;
+        
         //load images
-            for (const [key, value] of Object.entries(ImageArray)) {
-                const Path = ImageFolder + ImageArray[key]['path'];
-                const ImgHTML = document.createElement('img');
-                ImgHTML.setAttribute('class','collection-item');
-                ImgHTML.setAttribute('src',Path);
-                ImgHTML.setAttribute('onclick','ImageSelection(this);');
-                ImgHTML.setAttribute('name',ImageArray[key]['name']);
-                collectionItems.appendChild(ImgHTML);
-                ImgHTML.addEventListener('load',function(){
-                    ImgsLoaded ++;
+        for (const [key, value] of Object.entries(ImageArray)) {
+            const Path = ImageFolder + ImageArray[key]['path'];
+            const ImgHTML = document.createElement('img');
+            ImgHTML.setAttribute('class','collection-item');
+            ImgHTML.setAttribute('src',Path);
+            ImgHTML.setAttribute('onclick','ImageSelection(this);');
+            ImgHTML.setAttribute('name',ImageArray[key]['name']);
+            collectionItems.appendChild(ImgHTML);
+            ImgHTML.addEventListener('load',function(){
+                console.log('image loaded');
+                ImageLoaded(ImageArray);
+            });
 
-                });
-            }
-
-        while (ImgsLoaded < Object.keys(ImageArray).length) {
-            document.querySelector('.overlay').style.opacity = 1;
-            document.querySelector('.overlay').style.pointerEvents = 'auto';
-
-        }; 
-        console.log(ImgsLoaded);
-        document.querySelector('.overlay').style.opacity = 0;
-        document.querySelector('.overlay').style.pointerEvents = 'none';
-        //get total length of array
-        //add number each time to variable
-        //when the number is equal run that function
-        collectionItems.style.opacity = 1;
+        }
 
     },750);
     // setTimeout(function(){
