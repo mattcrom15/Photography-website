@@ -250,10 +250,10 @@ function ImageLoaded(array){
         document.querySelector('.overlay').style.opacity = 0;
         document.querySelector('.overlay').style.pointerEvents = 'none';
         console.log("Loading finished");
-        document.getElementById('slider-progress').style.width = ImgProgress +'%';
+        // document.getElementById('slider-progress').style.width = ImgProgress +'%';
     }
 
-    document.getElementById('slider-progress').style.width = ImgProgress + '%';
+    // document.getElementById('slider-progress').style.width = ImgProgress + '%';
     
 
 }
@@ -265,7 +265,7 @@ const collectionItems = document.querySelector('.collection-items');
 //load Collection
 
 function CollectionSelection(elem){
-    document.getElementById('slider-progress').style.width = 0;
+    // document.getElementById('slider-progress').style.width = 0;
     ImgsLoaded = 0;
 
     //check for hero-image
