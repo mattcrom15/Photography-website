@@ -16,22 +16,13 @@ const treesImages = {
     },
     '2':{
         'path':'tree.jpg',
-        'name':'Florence rooftops',
-    },
-    '3':{
-        'path':'treeline.jpg',
-        'name':'Springbrook Jungle',
-        
+        'name':'Uno',
     },
     '4':{
         'path':'tree04.jpg',
         'name':'Perth Palm',
         
-    },
-    '5':{
-        'path':'tree03.jpg',
-        'name':'Perth Palm',
-    },
+    }
 
 }
 
@@ -42,7 +33,7 @@ const  seaFolder = 'static/img/Seascapes/'
 
 const seaImages = {
     '0':{
-        'path':'seascape01.jpg',
+        'path':'Seascape.jpg',
         'name':'Dome',
     },
     '1':{
@@ -50,29 +41,24 @@ const seaImages = {
         'name':'Conversation',
     },
     '2':{
-        'path':'seascape03.jpg',
-        'name':'Spurn Point',
+        'path':'seascape06.jpg',
+        'name':'Clavell Tower',
+        
     },
     '3':{
         'path':'seascape04.jpg',
         'name':'Chesil Beach',
     },
     '4':{
-        'path':'seascape05.jpg',
-        'name':'Crabbing',
+        'path':'seascape03.jpg',
+        'name':'Spurn Point',
+        
     },
     '5':{
-        'path':'seascape06.jpg',
+        'path':'buoy.jpg',
         'name':'Clavell Tower',
-    },
-    '6':{
-        'path':'Seascape.jpg',
-        'name':'Clavell Tower',
-    },
-    '7':{
-        'path':'seascape08.jpg',
-        'name':'Dome(again)',
-    },
+    }
+
 }
 
 /// architecture
@@ -100,6 +86,10 @@ const archImages = {
         'path':'villa.jpg',
         'name':'Compton Acres',
     },
+    '5':{
+        'path':'jeddah.jpg',
+        'name': 'Jeddah'
+    }
 }
 
 
@@ -148,7 +138,12 @@ const ausImages = {
     '2':{
         'path':'jungle.jpg',
         'name':'Into the jungle'
-    }
+    },
+    '3':{
+        'path':'treeline.jpg',
+        'name':'Springbrook Jungle',
+        
+    },
 }
 
 const  insectFolder = 'static/img/Insects/'
@@ -169,7 +164,7 @@ const insectImages = {
     },
     '3':{
         'path':'golden-bloomed-longthorn-bettle.jpg',
-        'name':'Golden bloomed Grey Longthorn Bettle'
+        'name':'Longthorn Bettle'
     }
 }
 
