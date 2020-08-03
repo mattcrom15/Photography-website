@@ -33,7 +33,7 @@ const  seaFolder = 'static/img/Seascapes/'
 
 const seaImages = {
     '0':{
-        'path':'Seascape.jpg',
+        'path':'cliff.jpg',
         'name':'Dome',
     },
     '1':{
@@ -99,25 +99,23 @@ const  floFolder = 'static/img/Florence/'
 
 const floImages = {
     '0':{
-        'path':'florence01.jpg',
+        'path':'florence05.jpg',
         'name':'Dome',
     },
     '1':{
-        'path':'florence02.jpg',
-        'name':'Sienna',
-    },
-    '2':{
         'path':'florence03.jpg',
         'name':'Florence rooftops',
+    },
+    '2':{
+        'path':'florence02.jpg',
+        'name':'Sienna',
+
     },
     '3':{
         'path':'florence04.jpg',
         'name':'A walk through the city.',
     },
-    '4':{
-        'path':'florence05.jpg',
-        'name':'Dome(again)',
-    },
+
 }
 
 
