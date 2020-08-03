@@ -13,6 +13,22 @@ html{
     scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar {
+    width: 0.8em;
+    border-radius: 50px;
+  }
+   
+body::-webkit-scrollbar-track {
+    
+    background-color: rgb(255, 255, 255);
+}
+   
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(202, 202, 202);
+    outline: 5px solid black;
+
+}
+
 .gif-loader{
     position: fixed;
     top: 0;
