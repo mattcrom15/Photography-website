@@ -159,9 +159,10 @@ header{
 }
 
 .about{
+    padding:0;
     margin-top: 55px;
     margin-bottom: 10%;
-    width: 80%;
+    width: 100%;
 }
 
 .projects{
@@ -530,15 +531,18 @@ header{
         max-height: 90%;
     }
 
-
+    .solo-text{
+        padding-top: 3%;
+    }
 
 
     .solo-image-container{
-        width: 50%;
+        width: 80%;
         justify-content: center;
         align-items: center;
         margin:0;
         padding:0;
+        padding-top: 15px;
     }
 
     #image-title{
@@ -547,6 +551,8 @@ header{
 
     .solo-image{
         width: 100%;
+        padding-bottom: 0px;
+        pointer-events: none;
     }
 
     .close-ico{
@@ -566,5 +572,9 @@ header{
 
     .collection-progress{
         padding-left: 0;
+    }
+
+    .Prints-info ul{
+        padding: 0;
     }
 }
