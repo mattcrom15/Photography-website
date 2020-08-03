@@ -464,6 +464,12 @@ header{
     }
 }
 
+@media(max-height:826px){
+    .social-ico-container{
+        margin-top:15%;
+    }
+}
+
 /* mobile styles */
 
 @media(max-width:500px){
