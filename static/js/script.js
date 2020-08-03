@@ -15,11 +15,21 @@ const treesImages = {
         'name':'Sienna',
     },
     '2':{
-        'path':'tree03.jpg',
+        'path':'tree.jpg',
         'name':'Florence rooftops',
     },
     '3':{
+        'path':'treeline.jpg',
+        'name':'Springbrook Jungle',
+        
+    },
+    '4':{
         'path':'tree04.jpg',
+        'name':'Perth Palm',
+        
+    },
+    '5':{
+        'path':'tree03.jpg',
         'name':'Perth Palm',
     },
 
@@ -37,15 +47,15 @@ const seaImages = {
     },
     '1':{
         'path':'seascape02.jpg',
-        'name':'Sienna',
+        'name':'Conversation',
     },
     '2':{
         'path':'seascape03.jpg',
-        'name':'Florence rooftops',
+        'name':'Spurn Point',
     },
     '3':{
         'path':'seascape04.jpg',
-        'name':'A walk through the city.',
+        'name':'Chesil Beach',
     },
     '4':{
         'path':'seascape05.jpg',
@@ -56,7 +66,7 @@ const seaImages = {
         'name':'Clavell Tower',
     },
     '6':{
-        'path':'seascape07.jpg',
+        'path':'Seascape.jpg',
         'name':'Clavell Tower',
     },
     '7':{
@@ -123,18 +133,46 @@ const floImages = {
 
 // vegas
 
-const  vegasFolder = 'static/img/Vegas/'
+const  ausFolder = 'static/img/Aus/'
 
-const vegasImages = {
+const ausImages = {
     '0':{
-        'path':'Las_Vegas_01.jpg',
-        'name':'Vegas Sign'
+        'path':'opra_house_color.jpg',
+        'name':'Evening at the Oprea',
+        
     },
     '1':{
-        'path':'ceasers.jpg',
-        'name':'Ceasers',
+        'path':'Springbrook-waterfall.jpg',
+        'name':'Springbrook waterfall',
+    },
+    '2':{
+        'path':'jungle.jpg',
+        'name':'Into the jungle'
     }
 }
+
+const  insectFolder = 'static/img/Insects/'
+
+const insectImages = {
+    '0':{
+        'path':'Peakcock.jpg',
+        'name':'Peacock Butterfly',
+        
+    },
+    '1':{
+        'path':'butterfly02.jpg',
+        'name':'Skipper Butterfly',
+    },
+    '2':{
+        'path':'butterfly.jpg',
+        'name':'blue boii 2'
+    },
+    '3':{
+        'path':'golden-bloomed-longthorn-bettle.jpg',
+        'name':'Golden bloomed Grey Longthorn Bettle'
+    }
+}
+
 
 
 var mobileTotalWidth = 500;
@@ -282,9 +320,9 @@ function CollectionSelection(elem){
         var ImageArray = ''
         var ImageFolder = ''
         //check which collection has been selected
-        if(elem.innerHTML === 'Vegas.'){
-            ImageArray = vegasImages;
-            ImageFolder = vegasFolder;
+        if(elem.innerHTML === 'Australia.'){
+            ImageArray = ausImages;
+            ImageFolder = ausFolder;
 
         }else if(elem.innerHTML ==='Florence.'){
             ImageArray = floImages;
@@ -297,6 +335,10 @@ function CollectionSelection(elem){
         }else if(elem.innerHTML === 'Seascapes.'){
             ImageArray = seaImages;
             ImageFolder = seaFolder;
+
+        }else if(elem.innerHTML === 'Insects.'){
+            ImageArray = insectImages;
+            ImageFolder = insectFolder;
 
         }else{
             ImageArray = treesImages;
