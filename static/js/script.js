@@ -12,7 +12,7 @@ const treesImages = {
     },
     '1':{
         'path':'tree02.jpg',
-        'name':'Sienna',
+        'name':'Forgotten',
     },
     '2':{
         'path':'tree03.jpg',
