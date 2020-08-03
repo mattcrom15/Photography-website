@@ -34,7 +34,7 @@ const  seaFolder = 'static/img/Seascapes/'
 const seaImages = {
     '0':{
         'path':'cliff.jpg',
-        'name':'Dome',
+        'name':'Jurassic Coast',
     },
     '1':{
         'path':'seascape02.jpg',
@@ -56,7 +56,7 @@ const seaImages = {
     },
     '5':{
         'path':'buoy.jpg',
-        'name':'Clavell Tower',
+        'name':'Coastal',
     }
 
 }
@@ -72,7 +72,7 @@ const archImages = {
     },
     '1':{
         'path':'dome.jpg',
-        'name':'dome in florence',
+        'name':'Santa Maria del Fiore',
     },
     '2':{
         'path':'opra.jpg',
@@ -84,7 +84,7 @@ const archImages = {
     },
     '4':{
         'path':'villa.jpg',
-        'name':'Compton Acres',
+        'name':'Villa',
     },
     '5':{
         'path':'jeddah.jpg',
@@ -100,7 +100,7 @@ const  floFolder = 'static/img/Florence/'
 const floImages = {
     '0':{
         'path':'florence05.jpg',
-        'name':'Dome',
+        'name':'Cupola di Brunelleschi',
     },
     '1':{
         'path':'florence03.jpg',
@@ -126,7 +126,7 @@ const  ausFolder = 'static/img/Aus/'
 const ausImages = {
     '0':{
         'path':'opra_house_color.jpg',
-        'name':'Evening at the Oprea',
+        'name':'Evening at the Opera',
         
     },
     '1':{
@@ -158,7 +158,7 @@ const insectImages = {
     },
     '2':{
         'path':'butterfly.jpg',
-        'name':'blue boii 2'
+        'name':'Common Blue'
     },
     '3':{
         'path':'golden-bloomed-longthorn-bettle.jpg',
