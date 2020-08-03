@@ -240,11 +240,9 @@ header{
 #myProgress {
     width: 100%;
     background-color: white;
-    border-radius: 50px;
 }
   
 #slider-progress {
-    border-radius: 50px;
     width: 1%;
     height: 15px;
     background-color: rgb(42, 42, 42);
