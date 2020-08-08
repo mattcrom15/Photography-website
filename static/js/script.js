@@ -279,23 +279,23 @@ function CollectionSelection(elem) {
     var ImageFolder = "";
     //check which collection has been selected
     if (elem.innerHTML === "Australia.") {
-      ImageArray = ausImages;
-      ImageFolder = ausFolder;
+        ImageArray = ausImages;
+        ImageFolder = ausFolder;
     } else if (elem.innerHTML === "Florence.") {
-      ImageArray = floImages;
-      ImageFolder = floFolder;
+        ImageArray = floImages;
+        ImageFolder = floFolder;
     } else if (elem.innerHTML === "Architecture.") {
-      ImageArray = archImages;
-      ImageFolder = archFolder;
+        ImageArray = archImages;
+        ImageFolder = archFolder;
     } else if (elem.innerHTML === "Seascapes.") {
-      ImageArray = seaImages;
-      ImageFolder = seaFolder;
+        ImageArray = seaImages;
+        ImageFolder = seaFolder;
     } else if (elem.innerHTML === "Insects.") {
-      ImageArray = insectImages;
-      ImageFolder = insectFolder;
+        ImageArray = insectImages;
+        ImageFolder = insectFolder;
     } else {
-      ImageArray = treesImages;
-      ImageFolder = treesFolder;
+        ImageArray = treesImages;
+        ImageFolder = treesFolder;
     }
 
     //load images
