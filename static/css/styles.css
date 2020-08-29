@@ -58,7 +58,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 h1 {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 500;
   margin: 0;
   padding: 0;
@@ -69,7 +69,7 @@ h2,
 h3,
 p,
 li {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 li {
@@ -79,6 +79,17 @@ li {
 a {
   color: black;
   text-decoration: none;
+}
+
+.thumb {
+  width: 125px;
+  height: 125px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.thumb:hover {
+  filter: contrast(70%);
 }
 
 .home-page {
@@ -94,7 +105,7 @@ header {
 .name,
 .name-home {
   font-size: 24px;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 16px 0;
   margin-right: 55%;
   /* margin-left: 5%; */
@@ -170,7 +181,7 @@ header {
   font-size: 52px;
   list-style: none;
   text-decoration: none;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 300;
   color: rgb(211, 211, 211);
 }
@@ -181,7 +192,7 @@ header {
   font-size: 52px;
   list-style: none;
   text-decoration: none;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 500;
 }
 
