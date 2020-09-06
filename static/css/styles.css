@@ -13,20 +13,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body::-webkit-scrollbar {
-  width: 0.8em;
-  border-radius: 50px;
-}
-
-body::-webkit-scrollbar-track {
-  background-color: rgb(255, 255, 255);
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: rgb(202, 202, 202);
-  outline: 5px solid black;
-}
-
 .gif-loader {
   position: fixed;
   top: 0;
@@ -58,7 +44,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 h1 {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 500;
   margin: 0;
   padding: 0;
@@ -69,7 +55,7 @@ h2,
 h3,
 p,
 li {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 li {
@@ -94,7 +80,7 @@ header {
 .name,
 .name-home {
   font-size: 24px;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 16px 0;
   margin-right: 55%;
   /* margin-left: 5%; */
@@ -170,7 +156,7 @@ header {
   font-size: 52px;
   list-style: none;
   text-decoration: none;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 300;
   color: rgb(211, 211, 211);
 }
@@ -181,7 +167,7 @@ header {
   font-size: 52px;
   list-style: none;
   text-decoration: none;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 500;
 }
 
